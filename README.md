@@ -6,6 +6,8 @@ plain-English summary. Only the computed statistics are sent to the LLM, never t
 
 Supported log formats: Nginx `combined` and Nginx's default `main` format (combined + `X-Forwarded-For`).
 
+![LogaN - Log Analyzer screenshot](example_logan.png)
+
 ## Tech stack
 
 - **Backend:** Python 3.11+, FastAPI, python-dotenv, Google GenAI SDK (Gemini), pytest
