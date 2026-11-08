@@ -1,0 +1,28 @@
+192.168.1.10 - - [08/Nov/2026:10:00:01 +0000] "GET / HTTP/1.1" 200 5320 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/130.0 Safari/537.36"
+192.168.1.10 - - [08/Nov/2026:10:00:02 +0000] "GET /css/style.css HTTP/1.1" 200 1840 "http://example.com/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/130.0 Safari/537.36"
+192.168.1.10 - - [08/Nov/2026:10:00:02 +0000] "GET /js/app.js HTTP/1.1" 200 9120 "http://example.com/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/130.0 Safari/537.36"
+198.51.100.23 - - [08/Nov/2026:10:01:15 +0000] "GET /products HTTP/1.1" 200 7410 "https://www.google.com/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 14_5) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/17.5 Safari/605.1.15"
+198.51.100.23 - - [08/Nov/2026:10:01:40 +0000] "GET /products/42 HTTP/1.1" 200 3985 "http://example.com/products" "Mozilla/5.0 (Macintosh; Intel Mac OS X 14_5) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/17.5 Safari/605.1.15"
+198.51.100.23 - - [08/Nov/2026:10:02:05 +0000] "GET /images/missing-banner.png HTTP/1.1" 404 153 "http://example.com/products/42" "Mozilla/5.0 (Macintosh; Intel Mac OS X 14_5) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/17.5 Safari/605.1.15"
+203.0.113.77 - - [08/Nov/2026:10:03:00 +0000] "GET /wp-login.php HTTP/1.1" 404 153 "-" "python-requests/2.31.0"
+203.0.113.77 - - [08/Nov/2026:10:03:01 +0000] "GET /.env HTTP/1.1" 404 153 "-" "python-requests/2.31.0"
+203.0.113.77 - - [08/Nov/2026:10:03:02 +0000] "GET /phpmyadmin/ HTTP/1.1" 404 153 "-" "python-requests/2.31.0"
+203.0.113.77 - - [08/Nov/2026:10:03:03 +0000] "GET /.git/config HTTP/1.1" 403 162 "-" "python-requests/2.31.0"
+203.0.113.77 - - [08/Nov/2026:10:03:05 +0000] "POST /login HTTP/1.1" 401 98 "-" "python-requests/2.31.0"
+203.0.113.77 - - [08/Nov/2026:10:03:06 +0000] "POST /login HTTP/1.1" 401 98 "-" "python-requests/2.31.0"
+203.0.113.77 - - [08/Nov/2026:10:03:07 +0000] "POST /login HTTP/1.1" 401 98 "-" "python-requests/2.31.0"
+203.0.113.77 - - [08/Nov/2026:10:03:09 +0000] "GET /backup.zip HTTP/1.1" 404 153 "-" "python-requests/2.31.0"
+10.0.0.5 - - [08/Nov/2026:10:04:12 +0000] "POST /api/login HTTP/1.1" 200 412 "http://example.com/login" "Mozilla/5.0 (X11; Linux x86_64; rv:132.0) Gecko/20100101 Firefox/132.0"
+10.0.0.5 - - [08/Nov/2026:10:04:30 +0000] "GET /api/orders HTTP/1.1" 500 87 "http://example.com/account" "Mozilla/5.0 (X11; Linux x86_64; rv:132.0) Gecko/20100101 Firefox/132.0"
+10.0.0.5 - - [08/Nov/2026:10:04:45 +0000] "GET /api/orders HTTP/1.1" 200 2210 "http://example.com/account" "Mozilla/5.0 (X11; Linux x86_64; rv:132.0) Gecko/20100101 Firefox/132.0"
+this line is broken and should be skipped by the parser
+192.0.2.14 - - [08/Nov/2026:10:05:10 +0000] "GET /robots.txt HTTP/1.1" 200 68 "-" "Googlebot/2.1 (+http://www.google.com/bot.html)"
+192.0.2.14 - - [08/Nov/2026:10:05:11 +0000] "GET /sitemap.xml HTTP/1.1" 200 1290 "-" "Googlebot/2.1 (+http://www.google.com/bot.html)"
+192.168.1.10 - - [08/Nov/2026:10:06:00 +0000] "GET /contact HTTP/1.1" 200 2875 "http://example.com/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/130.0 Safari/537.36"
+192.168.1.10 - - [08/Nov/2026:10:06:30 +0000] "POST /contact HTTP/1.1" 302 0 "http://example.com/contact" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/130.0 Safari/537.36"
+198.51.100.23 - - [08/Nov/2026:10:07:02 +0000] "GET /checkout HTTP/1.1" 200 4520 "http://example.com/cart" "Mozilla/5.0 (Macintosh; Intel Mac OS X 14_5) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/17.5 Safari/605.1.15"
+10.0.0.5 - - [08/Nov/2026:10:08:15 +0000] "GET /api/profile HTTP/1.1" 401 64 "http://example.com/account" "Mozilla/5.0 (X11; Linux x86_64; rv:132.0) Gecko/20100101 Firefox/132.0"
+192.0.2.14 - - [08/Nov/2026:10:09:40 +0000] "GET /old-page HTTP/1.1" 404 153 "-" "Googlebot/2.1 (+http://www.google.com/bot.html)"
+
+
+
